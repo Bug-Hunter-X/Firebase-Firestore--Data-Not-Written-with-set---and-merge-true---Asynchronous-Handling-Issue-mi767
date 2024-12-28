@@ -1,0 +1,3 @@
+# Firebase Firestore Data Write Issue
+
+This repository demonstrates a bug where data isn't written to Firestore using `set()` with `merge:true` due to improper asynchronous operation handling.  The issue arises because of promises and how they are handled within the data writing function. The `firestoreBug.js` file contains the problematic code, while `firestoreBugSolution.js` provides the corrected version.
